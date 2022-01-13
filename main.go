@@ -112,5 +112,6 @@ func practice() {
 
 func main() {
 	account := accounts.NewAccount("scott")
-	fmt.Println(account.Owner)
+	account.Deposit(100)
+	fmt.Println(account.Balance())
 }
