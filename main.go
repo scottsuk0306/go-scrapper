@@ -5,6 +5,12 @@ import (
 	"strings"
 )
 
+type person struct {
+	name	string
+	age		int
+	favFood	[]string
+}
+
 func lenAndUpper(name string) (length int, uppercase string) {
 	// defer command is evaluated when function call is finished.
 	defer fmt.Println("I'm done")
@@ -94,5 +100,11 @@ func main() {
 	for key, value := range scott {
 		fmt.Println(key, value)
 	}
+
+	// Struct
+	fmt.Println("========================================")
+	favFood := []string{"kimchi", "ramen"}
+	scott_info := person{name: "scott", age: 22, favFood: favFood}
+	fmt.Println(scott_info.name)
 
 }
