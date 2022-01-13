@@ -42,20 +42,24 @@ func canISmoke(age int) bool {
 func main() {
 	fmt.Println("Hello World")
 	// Variable Declaration
+	fmt.Println("========================================")
 	name := "Scott"
 	// Variable Update
 	name = "Scott Suk"
 
 	// Functions
+	fmt.Println("========================================")
 	length, _ := lenAndUpper(name)
 	fmt.Println(length)
 	fmt.Println(name)
 
 	// For loop
+	fmt.Println("========================================")
 	sum_result := superAdd(1, 2, 3, 4, 5)
 	fmt.Println(sum_result)
 
 	// If Else
+	fmt.Println("========================================")
 	if canIDrink(16) {
 		fmt.Println("You can drink!")
 	} else {
@@ -63,6 +67,7 @@ func main() {
 	}
 
 	// Switch
+	fmt.Println("========================================")
 	if canISmoke(10) {
 		fmt.Println("You can smoke!")
 	} else {
@@ -70,9 +75,24 @@ func main() {
 	}
 
 	// Pointers
+	fmt.Println("========================================")
 	a := 2
 	b := &a
 	a = 10
 	*b = 2020
 	fmt.Println(a, *b)
+
+	// Arrays
+	fmt.Println("========================================")
+	names := []string{"scott", "judy", "jerry"}
+	names = append(names, "sherman")
+	fmt.Println(names)
+
+	// Maps
+	fmt.Println("========================================")
+	scott := map[string]string{"name": "nico", "age": "12"}
+	for key, value := range scott {
+		fmt.Println(key, value)
+	}
+
 }
