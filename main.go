@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"strings"
+	"go-scrapper/accounts"
 )
 
 type person struct {
@@ -45,7 +46,7 @@ func canISmoke(age int) bool {
 	return false
 }
 
-func main() {
+func practice() {
 	fmt.Println("Hello World")
 	// Variable Declaration
 	fmt.Println("========================================")
@@ -107,4 +108,9 @@ func main() {
 	scott_info := person{name: "scott", age: 22, favFood: favFood}
 	fmt.Println(scott_info.name)
 
+}
+
+func main() {
+	account := accounts.NewAccount("scott")
+	fmt.Println(account.Owner)
 }
