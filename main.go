@@ -68,4 +68,11 @@ func main() {
 	} else {
 		fmt.Println("You cannot smoke!")
 	}
+
+	// Pointers
+	a := 2
+	b := &a
+	a = 10
+	*b = 2020
+	fmt.Println(a, *b)
 }
