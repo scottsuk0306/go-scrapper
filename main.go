@@ -13,6 +13,15 @@ func lenAndUpper(name string) (length int, uppercase string) {
 	return
 }
 
+func superAdd(numbers ...int) int {
+	total := 0
+	for idx, number := range numbers {
+		fmt.Println("index: ", idx)
+		total += number
+	}
+	return total
+}
+
 func main() {
 	fmt.Println("Hello World")
 	// Variable Declaration
@@ -22,4 +31,6 @@ func main() {
 	length, _ := lenAndUpper(name)
 	fmt.Println(length)
 	fmt.Println(name)
+	sum_result = superAdd(1, 2, 3, 4, 5)
+	fmt.Println(sum_result)
 }
